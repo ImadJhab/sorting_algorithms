@@ -24,5 +24,7 @@ void insertion_sort_list(listint_t **list);
 listint_t *swap(listint_t *node, listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
+int lomuto(int *array, int down, int up, size_t size);
+void help_quicksort(int *array, int down, int up, size_t ln);
 
 #endif
