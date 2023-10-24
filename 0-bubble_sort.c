@@ -22,7 +22,7 @@ void bubble_sort(int *array, size_t size)
 			if (array[track] > array[track + 1] && array[track + 1])
 			{
 				sorter = array[track];
-				array[track + 1] = array[track];
+				array[track] = array[track + 1];
 				array[track + 1] = sorter;
 				print_array(array, size);
 			}
