@@ -15,11 +15,11 @@ void bubble_sort(int *array, size_t size)
 	{
 		return;
 	}
-	for (i = 0; i < size; i++)
+	for (i = 0; i < size - 1; i++)
 	{
-		for (track = 0; track < size; track++)
+		for (track = 0; track < size - 1 - i; track++)
 		{
-			if (array[track] > array[track + 1] && array[track + 1])
+			if (array[track] > array[track + 1])
 			{
 				sorter = array[track];
 				array[track] = array[track + 1];
